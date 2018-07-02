@@ -47,26 +47,13 @@ class TapViewController: UIViewController {
         let b = CGFloat(Int( CGFloat(data[pixelAd+2])))///CGFloat(255.0)*100)) / 100
         let a = CGFloat(Int( CGFloat(data[pixelAd+3])/CGFloat(255.0)*100)) / 100
         
-        let pixelColors = [r,g,b,a]
-        
+        print([r,g,b,a])
         //navigationbarに結果を表示
-        var navTitleArray = [String]()
-        for i in 0..<pixelColors.count {
-            var text: String!
-            switch i {
-            case 0:
-                text = "R:" + String(Int(pixelColors[i]))
-            case 1:
-                text = " G:" + String(Int(pixelColors[i]))
-            case 2:
-                text = " B:" + String(Int(pixelColors[i]))
-            default:
-                //CGFloat → String
-                text = " a:" + String(format: "%.1f", pixelColors[i])
-            }
-            navTitleArray.append(text)
-        }
-        navigationItem.title = navTitleArray.joined()
+        let R = "R:" + String(Int(r))
+        let G = " G:" + String(Int(g))
+        let B = " B:" + String(Int(b))
+        let A = " A:" + String(Int(a))
+        navigationItem.title = R + G + B + A
     }
     
     
@@ -197,9 +184,6 @@ extension TapViewController: UIImagePickerControllerDelegate, UINavigationContro
         present(actionSheet, animated: true, completion: nil)
     }
     
-    
-    
-    
-    
+ 
 }
 
