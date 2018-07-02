@@ -47,7 +47,7 @@ class TapViewController: UIViewController {
             print("そのままを表示")
         }
 
-        imageView.contentMode = UIViewContentMode.scaleToFill
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
         imageView.frame.size = CGSize(width: imageWidth, height: imageHeight)
         print(imageHeight, imageWidth)
         imageView.center = CGPoint(x: centerX, y: centerY)
