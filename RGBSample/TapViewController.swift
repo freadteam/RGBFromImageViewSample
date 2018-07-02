@@ -52,7 +52,7 @@ class TapViewController: UIViewController {
         let R = "R:" + String(Int(r))
         let G = " G:" + String(Int(g))
         let B = " B:" + String(Int(b))
-        let A = " A:" + String(Int(a))
+        let A = " A:" +  String(format: "%.1f", a)
         navigationItem.title = R + G + B + A
     }
     
@@ -84,17 +84,17 @@ extension TapViewController: UIImagePickerControllerDelegate, UINavigationContro
         let heightRatio = imageHeight
         //画像の大きさに応じてiamgeviewのサイズを変える
         if imageHeight > self.view.frame.height || imageWidth > self.view.frame.width {
-            
+            print("1")
             imageWidth = width
             imageHeight = width*heightRatio/widthRatio
             
         } else if imageHeight > self.view.frame.height {
-            
+            print("2")
             imageHeight = height
             imageWidth = height*widthRatio/heightRatio
             
         } else if imageWidth > self.view.frame.width {
-            
+            print("3")
             imageWidth = width
             imageHeight = width*heightRatio/widthRatio
             
@@ -105,8 +105,10 @@ extension TapViewController: UIImagePickerControllerDelegate, UINavigationContro
         imageView.frame.size = CGSize(width: imageWidth, height: imageHeight)
         //画像がnavigationbarに被らないようにする
         if imageHeight/2 > (height/2 - navigationBarHeight!) {
+            print("4")
             imageView.center = CGPoint(x: centerX, y: centerY + navigationBarHeight!)
         } else {
+            print("5")
             imageView.center = CGPoint(x: centerX, y: centerY)
         }
         
@@ -183,7 +185,6 @@ extension TapViewController: UIImagePickerControllerDelegate, UINavigationContro
         
         present(actionSheet, animated: true, completion: nil)
     }
-    
- 
+
 }
 
