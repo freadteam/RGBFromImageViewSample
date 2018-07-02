@@ -14,7 +14,6 @@
 		2C10FAED20E4EC4D0003DF6F /* mitsushima.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C10FAEC20E4EC4D0003DF6F /* mitsushima.jpg */; };
 		2C149FE920EA32D50096FEEB /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C149FE820EA32D50096FEEB /* cat.jpg */; };
 		2C149FEB20EA4B750096FEEB /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C149FEA20EA4B750096FEEB /* test.jpg */; };
-		2C348E2A20E51D8600C98D97 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C348E2920E51D8600C98D97 /* images.jpg */; };
 		2C58E6AE20E5B1C8005B21AF /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58E6AD20E5B1C8005B21AF /* TapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		2C10FAEC20E4EC4D0003DF6F /* mitsushima.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mitsushima.jpg; sourceTree = "<group>"; };
 		2C149FE820EA32D50096FEEB /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		2C149FEA20EA4B750096FEEB /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
-		2C348E2920E51D8600C98D97 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
 		2C58E6AD20E5B1C8005B21AF /* TapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,14 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				2C149FEA20EA4B750096FEEB /* test.jpg */,
-				2C348E2920E51D8600C98D97 /* images.jpg */,
 				2C149FE820EA32D50096FEEB /* cat.jpg */,
+				2C10FAEC20E4EC4D0003DF6F /* mitsushima.jpg */,
 				2C10FADA20E4E8110003DF6F /* AppDelegate.swift */,
 				2C58E6AD20E5B1C8005B21AF /* TapViewController.swift */,
 				2C10FADE20E4E8110003DF6F /* Main.storyboard */,
 				2C10FAE120E4E8130003DF6F /* Assets.xcassets */,
 				2C10FAE320E4E8130003DF6F /* LaunchScreen.storyboard */,
-				2C10FAEC20E4EC4D0003DF6F /* mitsushima.jpg */,
 				2C10FAE620E4E8130003DF6F /* Info.plist */,
 			);
 			path = RGBSample;
@@ -136,7 +133,6 @@
 			files = (
 				2C10FAE520E4E8130003DF6F /* LaunchScreen.storyboard in Resources */,
 				2C149FEB20EA4B750096FEEB /* test.jpg in Resources */,
-				2C348E2A20E51D8600C98D97 /* images.jpg in Resources */,
 				2C10FAE220E4E8130003DF6F /* Assets.xcassets in Resources */,
 				2C149FE920EA32D50096FEEB /* cat.jpg in Resources */,
 				2C10FAE020E4E8110003DF6F /* Main.storyboard in Resources */,
